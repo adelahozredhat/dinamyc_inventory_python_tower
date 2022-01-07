@@ -1,0 +1,1820 @@
+{
+    "status": "success",
+    "message": "Inventory ready",
+    "data": {
+        "all": {
+            "vars": {
+                "ansible_winrm_cert_pem": "/var/lib/awx/connection_keys/winrm/host/host_cert.pem",
+                "ansible_winrm_cert_key_pem": "/var/lib/awx/connection_keys/winrm/host/host_key.pem",
+                "ansible_winrm_server_cert_validation": "ignore",
+                "ansible_winrm_read_timeout_sec": 120,
+                "ansible_winrm_transport": "certificate",
+                "ansible_ssh_private_key_file": "/var/lib/awx/connection_keys/ssh/host/id_rsa"
+            },
+            "groups": {
+                "APP_1": {
+                    "previous": {
+                        "EIPRO": {
+                            "tst": {
+                                "hosts": [
+                                    "eiproast18.host.es",
+                                    "eiproast58.host.es",
+                                    "eiproast59.host.es",
+                                    "tbaseast01.host.es"
+                                ]
+                            },
+                            "default": {
+                                "hosts": [
+                                    "eiproast18.host.es",
+                                    "eiproast58.host.es",
+                                    "eiproast59.host.es",
+                                    "tbaseast01.host.es"
+                                ]
+                            }
+                        },
+                        "TBASE": {
+                            "tst": {
+                                "hosts": [
+                                    "tbaseast01.host.es",
+                                    "tbaseast02.host.es",
+                                    "tbaseast03.host.es",
+                                    "tbaseast04.host.es",
+                                    "tbaseast05.host.es",
+                                    "tbaseast06.host.es",
+                                    "arqowasr06.hostpre.glcpre.es",
+                                    "arqopast39.host.es"
+                                ]
+                            },
+                            "default": {
+                                "hosts": [
+                                    "tbaseast01.host.es",
+                                    "tbaseast02.host.es",
+                                    "tbaseast03.host.es",
+                                    "tbaseast04.host.es",
+                                    "tbaseast05.host.es",
+                                    "tbaseast06.host.es",
+                                    "arqowasr06.hostpre.glcpre.es",
+                                    "arqopast39.host.es"
+                                ]
+                            }
+                        },
+                        "PAQBI": {
+                            "tst": {
+                                "hosts": [
+                                    "paqbiast01.scentrais.gbpi.loc",
+                                    "paqbiast02.mcf.gbpi.loc",
+                                    "paqbiast03.mcf.gbpi.loc",
+                                    "paqbiast04.scentrais.gbpi.loc",
+                                    "paqbiast05.servicios.loc",
+                                    "paqbiast06.servicios.loc",
+                                    "paqbiast07.servicios.loc",
+                                    "paqbiast08.servicios.loc"
+                                ]
+                            },
+                            "default": {
+                                "hosts": [
+                                    "paqbiast01.scentrais.gbpi.loc",
+                                    "paqbiast02.mcf.gbpi.loc",
+                                    "paqbiast03.mcf.gbpi.loc",
+                                    "paqbiast04.scentrais.gbpi.loc",
+                                    "paqbiast05.servicios.loc",
+                                    "paqbiast06.servicios.loc",
+                                    "paqbiast07.servicios.loc",
+                                    "paqbiast08.servicios.loc"
+                                ]
+                            }
+                        },
+                        "PAQCX": {
+                            "tst": {
+                                "hosts": [
+                                    "paqcxast01.host.es",
+                                    "paqcxast02.host.es",
+                                    "paqcxast03.host.es",
+                                    "paqcxast04.host.es",
+                                    "paqcxast05.host.glc.es",
+                                    "paqcxast06.host.glc.es",
+                                    "paqcxast07.host.glc.es",
+                                    "paqcxast08.host.glc.es"
+                                ]
+                            },
+                            "default": {
+                                "hosts": [
+                                    "paqcxast01.host.es",
+                                    "paqcxast02.host.es",
+                                    "paqcxast03.host.es",
+                                    "paqcxast04.host.es",
+                                    "paqcxast05.host.glc.es",
+                                    "paqcxast06.host.glc.es",
+                                    "paqcxast07.host.glc.es",
+                                    "paqcxast08.host.glc.es"
+                                ]
+                            }
+                        },
+                        "PAQFA": {
+                            "tst": {
+                                "hosts": [
+                                    "paqfaast01.servicios.loc",
+                                    "paqfaast02.ppmcf.ppgbpi.loc",
+                                    "paqfaast03.ppscentrais.ppgbpi.loc",
+                                    "paqfaast04.servicios.loc",
+                                    "paqfaast05.netgbpi.ext",
+                                    "paqfaast06.pe.pr.geos.loc",
+                                    "paqfaast07.host.es",
+                                    "paqfaast08.scentrais.gbpi.loc",
+                                    "paqfaast09.host.es",
+                                    "paqfaast10.host.es",
+                                    "paqfaast11.scentrais.gbpi.loc",
+                                    "paqfaast12.host.es",
+                                    "paqfaast14.scentrais.gbpi.loc",
+                                    "paqfaast16.scentrais.gbpi.loc",
+                                    "arqopwst02.host.es",
+                                    "arqopwst13.host.es",
+                                    "arqowasr04.hostpre.glcpre.es",
+                                    "arqowast03.hostpre.glcpre.es",
+                                    "arqowast09.hostpre.glcpre.es",
+                                    "arqowast13.hostpre.glcpre.es",
+                                    "arqowast15.hostpre.glcpre.es",
+                                    "arqowast17.hostpre.glcpre.es",
+                                    "arqowast19.hostpre.glcpre.es",
+                                    "arqowast21.hostpre.glcpre.es",
+                                    "arqowast23.hostpre.glcpre.es",
+                                    "arqopasr21.host.es",
+                                    "arqopasr29.host.es",
+                                    "arqopasr31.host.es",
+                                    "arqopast06.host.glc.es",
+                                    "arqopast13.host.es",
+                                    "arqopast15.hostpre.glcpre.es",
+                                    "arqopast17.host.es",
+                                    "arqopast19.host.es",
+                                    "arqopast21.hostpre.glcpre.es",
+                                    "arqopast23.hostpre.glcpre.es",
+                                    "arqopast31.host.es",
+                                    "arqopast41.hostpre.glcpre.es",
+                                    "arqopast43.hostpre.glcpre.es",
+                                    "arqopast55.hostpre.glcpre.es",
+                                    "arqopfst01.host.es",
+                                    "paqfaast50.host.es",
+                                    "paqfaast51.host.es",
+                                    "paqfaast52.host.es",
+                                    "paqfaast53.host.es",
+                                    "paqfaast54.host.es",
+                                    "paqfaast55.host.es",
+                                    "paqfaast56.host.es",
+                                    "paqfaast57.host.es",
+                                    "paqfaast58.host.es",
+                                    "paqfaast59.host.es",
+                                    "paqfaast60.host.es",
+                                    "paqfaast61.host.es",
+                                    "paqfaast62.host.es",
+                                    "paqfaast63.host.es",
+                                    "paqfaast64.host.es",
+                                    "paqfaast65.host.es",
+                                    "paqfaast66.host.es",
+                                    "paqfaast67.host.es",
+                                    "paqfaast68.host.es",
+                                    "paqfaast69.host.es",
+                                    "paqfaast70.host.es",
+                                    "paqfaast71.host.es",
+                                    "paqfaast72.host.es",
+                                    "paqfaast73.host.es",
+                                    "paqfaast74.host.es",
+                                    "paqfaast75.host.es",
+                                    "paqfaast76.host.es",
+                                    "paqfaast77.host.es",
+                                    "paqfaast78.host.es",
+                                    "paqfaast79.host.es",
+                                    "paqfaast79testtest.host.es"
+                                ]
+                            },
+                            "default": {
+                                "hosts": [
+                                    "paqfaast01.servicios.loc",
+                                    "paqfaast02.ppmcf.ppgbpi.loc",
+                                    "paqfaast03.ppscentrais.ppgbpi.loc",
+                                    "paqfaast04.servicios.loc",
+                                    "paqfaast05.netgbpi.ext",
+                                    "paqfaast06.pe.pr.geos.loc",
+                                    "paqfaast07.host.es",
+                                    "paqfaast08.scentrais.gbpi.loc",
+                                    "paqfaast09.host.es",
+                                    "paqfaast10.host.es",
+                                    "paqfaast11.scentrais.gbpi.loc",
+                                    "paqfaast12.host.es",
+                                    "paqfaast14.scentrais.gbpi.loc",
+                                    "paqfaast16.scentrais.gbpi.loc",
+                                    "arqopwst02.host.es",
+                                    "arqopwst13.host.es",
+                                    "arqowasr04.hostpre.glcpre.es",
+                                    "arqowast03.hostpre.glcpre.es",
+                                    "arqowast09.hostpre.glcpre.es",
+                                    "arqowast13.hostpre.glcpre.es",
+                                    "arqowast15.hostpre.glcpre.es",
+                                    "arqowast17.hostpre.glcpre.es",
+                                    "arqowast19.hostpre.glcpre.es",
+                                    "arqowast21.hostpre.glcpre.es",
+                                    "arqowast23.hostpre.glcpre.es",
+                                    "arqopasr21.host.es",
+                                    "arqopasr29.host.es",
+                                    "arqopasr31.host.es",
+                                    "arqopast06.host.glc.es",
+                                    "arqopast13.host.es",
+                                    "arqopast15.hostpre.glcpre.es",
+                                    "arqopast17.host.es",
+                                    "arqopast19.host.es",
+                                    "arqopast21.hostpre.glcpre.es",
+                                    "arqopast23.hostpre.glcpre.es",
+                                    "arqopast31.host.es",
+                                    "arqopast41.hostpre.glcpre.es",
+                                    "arqopast43.hostpre.glcpre.es",
+                                    "arqopast55.hostpre.glcpre.es",
+                                    "arqopfst01.host.es",
+                                    "paqfaast50.host.es",
+                                    "paqfaast51.host.es",
+                                    "paqfaast52.host.es",
+                                    "paqfaast53.host.es",
+                                    "paqfaast54.host.es",
+                                    "paqfaast55.host.es",
+                                    "paqfaast56.host.es",
+                                    "paqfaast57.host.es",
+                                    "paqfaast58.host.es",
+                                    "paqfaast59.host.es",
+                                    "paqfaast60.host.es",
+                                    "paqfaast61.host.es",
+                                    "paqfaast62.host.es",
+                                    "paqfaast63.host.es",
+                                    "paqfaast64.host.es",
+                                    "paqfaast65.host.es",
+                                    "paqfaast66.host.es",
+                                    "paqfaast67.host.es",
+                                    "paqfaast68.host.es",
+                                    "paqfaast69.host.es",
+                                    "paqfaast70.host.es",
+                                    "paqfaast71.host.es",
+                                    "paqfaast72.host.es",
+                                    "paqfaast73.host.es",
+                                    "paqfaast74.host.es",
+                                    "paqfaast75.host.es",
+                                    "paqfaast76.host.es",
+                                    "paqfaast77.host.es",
+                                    "paqfaast78.host.es",
+                                    "paqfaast79.host.es",
+                                    "paqfaast79testtest.host.es"
+                                ]
+                            }
+                        },
+                        "PAQFI": {
+                            "tst": {
+                                "hosts": [
+                                    "paqfiast09.host.es",
+                                    "paqfiast10.host.es",
+                                    "paqfiast11.host.es",
+                                    "paqfiast12.host.es",
+                                    "paqfiast13.host.es",
+                                    "paqfiast14.host.es",
+                                    "paqfiast17.host.es",
+                                    "paqfiast18.host.es"
+                                ]
+                            },
+                            "default": {
+                                "hosts": [
+                                    "paqfiast09.host.es",
+                                    "paqfiast10.host.es",
+                                    "paqfiast11.host.es",
+                                    "paqfiast12.host.es",
+                                    "paqfiast13.host.es",
+                                    "paqfiast14.host.es",
+                                    "paqfiast17.host.es",
+                                    "paqfiast18.host.es"
+                                ]
+                            }
+                        },
+                        "PROFI": {
+                            "pre": {
+                                "hosts": [
+                                    "arqopasr09.host.es"
+                                ]
+                            },
+                            "default": {
+                                "hosts": [
+                                    "arqopasr09.host.es"
+                                ]
+                            }
+                        },
+                        "ARQOP": {
+                            "pre": {
+                                "hosts": [
+                                    "arqopasr16.host.es",
+                                    "arqopasr19.host.es"
+                                ]
+                            },
+                            "default": {
+                                "hosts": [
+                                    "arqopasr16.host.es",
+                                    "arqopasr19.host.es"
+                                ]
+                            }
+                        }
+                    },
+                    "production": {
+                        "PROFI": {
+                            "pro": {
+                                "hosts": [
+                                    "profiasp01.host.es",
+                                    "profiasp02.host.es",
+                                    "adofiasp14.host.es",
+                                    "adofiasp16.host.es",
+                                    "adofiasp22.host.es",
+                                    "adofiasp24.host.es",
+                                    "arqopasp11.host.es",
+                                    "arqopasp41.host.es",
+                                    "arqopasp47.host.es",
+                                    "arqopasp66.host.es",
+                                    "arqopasp68.host.es",
+                                    "arqopasp86.host.es"
+                                ]
+                            },
+                            "default": {
+                                "hosts": [
+                                    "profiasp01.host.es",
+                                    "profiasp02.host.es",
+                                    "adofiasp14.host.es",
+                                    "adofiasp16.host.es",
+                                    "adofiasp22.host.es",
+                                    "adofiasp24.host.es",
+                                    "arqopasp11.host.es",
+                                    "arqopasp41.host.es",
+                                    "arqopasp47.host.es",
+                                    "arqopasp66.host.es",
+                                    "arqopasp68.host.es",
+                                    "arqopasp86.host.es"
+                                ]
+                            }
+                        },
+                        "ARQOP": {
+                            "pro": {
+                                "hosts": [
+                                    "arqopasp21.host.es",
+                                    "arqopasp31.host.es",
+                                    "arqopasp33.host.es",
+                                    "arqopasp52.host.es",
+                                    "arqopasp70.host.es",
+                                    "arqopasp72.host.es"
+                                ]
+                            },
+                            "default": {
+                                "hosts": [
+                                    "arqopasp21.host.es",
+                                    "arqopasp31.host.es",
+                                    "arqopasp33.host.es",
+                                    "arqopasp52.host.es",
+                                    "arqopasp70.host.es",
+                                    "arqopasp72.host.es"
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "_meta": {
+                "hostvars": {
+                    "eiproast18.host.es": {
+                        "system_code": "EIPRO",
+                        "system_description": "PROVES PILOT",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@eiproast18.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "eiproast58.host.es": {
+                        "system_code": "EIPRO",
+                        "system_description": "PROVES PILOT",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@eiproast58.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "eiproast59.host.es": {
+                        "system_code": "EIPRO",
+                        "system_description": "PROVES PILOT",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@eiproast59.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "tbaseast01.host.es": {
+                        "system_code": "EIPRO",
+                        "system_description": "PROVES PILOT",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@tbaseast01.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "tbaseast02.host.es": {
+                        "system_code": "TBASE",
+                        "system_description": "TSBASE FACTORY QA",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "dmz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@tbaseast02.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "tbaseast03.host.es": {
+                        "system_code": "TBASE",
+                        "system_description": "TSBASE FACTORY QA",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@tbaseast03.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "tbaseast04.host.es": {
+                        "system_code": "TBASE",
+                        "system_description": "TSBASE FACTORY QA",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@tbaseast04.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "tbaseast05.host.es": {
+                        "system_code": "TBASE",
+                        "system_description": "TSBASE FACTORY QA",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@tbaseast05.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "tbaseast06.host.es": {
+                        "system_code": "TBASE",
+                        "system_description": "TSBASE FACTORY QA",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@tbaseast06.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "profiasp01.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@profiasp01.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "profiasp02.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@profiasp02.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqbiast01.scentrais.gbpi.loc": {
+                        "system_code": "PAQBI",
+                        "system_description": "SERVIDORES PAQUETIZACION BPI",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqbiast02.mcf.gbpi.loc": {
+                        "system_code": "PAQBI",
+                        "system_description": "SERVIDORES PAQUETIZACION BPI",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqbiast03.mcf.gbpi.loc": {
+                        "system_code": "PAQBI",
+                        "system_description": "SERVIDORES PAQUETIZACION BPI",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqbiast04.scentrais.gbpi.loc": {
+                        "system_code": "PAQBI",
+                        "system_description": "SERVIDORES PAQUETIZACION BPI",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqbiast05.servicios.loc": {
+                        "system_code": "PAQBI",
+                        "system_description": "SERVIDORES PAQUETIZACION BPI",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqbiast05.servicios.loc'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqbiast06.servicios.loc": {
+                        "system_code": "PAQBI",
+                        "system_description": "SERVIDORES PAQUETIZACION BPI",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqbiast06.servicios.loc'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqbiast07.servicios.loc": {
+                        "system_code": "PAQBI",
+                        "system_description": "SERVIDORES PAQUETIZACION BPI",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqbiast07.servicios.loc'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqbiast08.servicios.loc": {
+                        "system_code": "PAQBI",
+                        "system_description": "SERVIDORES PAQUETIZACION BPI",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqbiast08.servicios.loc'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqcxast01.host.es": {
+                        "system_code": "PAQCX",
+                        "system_description": "SERVIDORES PAQUETIZACION CXB",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqcxast01.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqcxast02.host.es": {
+                        "system_code": "PAQCX",
+                        "system_description": "SERVIDORES PAQUETIZACION CXB",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqcxast02.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqcxast03.host.es": {
+                        "system_code": "PAQCX",
+                        "system_description": "SERVIDORES PAQUETIZACION CXB",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqcxast03.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqcxast04.host.es": {
+                        "system_code": "PAQCX",
+                        "system_description": "SERVIDORES PAQUETIZACION CXB",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqcxast04.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqcxast05.host.glc.es": {
+                        "system_code": "PAQCX",
+                        "system_description": "SERVIDORES PAQUETIZACION CXB",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqcxast06.host.glc.es": {
+                        "system_code": "PAQCX",
+                        "system_description": "SERVIDORES PAQUETIZACION CXB",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqcxast07.host.glc.es": {
+                        "system_code": "PAQCX",
+                        "system_description": "SERVIDORES PAQUETIZACION CXB",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqcxast08.host.glc.es": {
+                        "system_code": "PAQCX",
+                        "system_description": "SERVIDORES PAQUETIZACION CXB",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast01.servicios.loc": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast01.servicios.loc'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast02.ppmcf.ppgbpi.loc": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast03.ppscentrais.ppgbpi.loc": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast04.servicios.loc": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast04.servicios.loc'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast05.netgbpi.ext": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast06.pe.pr.geos.loc": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast06.pe.pr.geos.loc'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast07.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast07.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast08.scentrais.gbpi.loc": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast09.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast09.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast10.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast10.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast11.scentrais.gbpi.loc": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast11.scentrais.gbpi.loc'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast12.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast12.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast14.scentrais.gbpi.loc": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast14.scentrais.gbpi.loc'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast16.scentrais.gbpi.loc": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "BPI",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfiast09.host.es": {
+                        "system_code": "PAQFI",
+                        "system_description": "SERVIDORES PAQUETIZACION FILIALES",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfiast10.host.es": {
+                        "system_code": "PAQFI",
+                        "system_description": "SERVIDORES PAQUETIZACION FILIALES",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfiast11.host.es": {
+                        "system_code": "PAQFI",
+                        "system_description": "SERVIDORES PAQUETIZACION FILIALES",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfiast12.host.es": {
+                        "system_code": "PAQFI",
+                        "system_description": "SERVIDORES PAQUETIZACION FILIALES",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfiast13.host.es": {
+                        "system_code": "PAQFI",
+                        "system_description": "SERVIDORES PAQUETIZACION FILIALES",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfiast13.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfiast14.host.es": {
+                        "system_code": "PAQFI",
+                        "system_description": "SERVIDORES PAQUETIZACION FILIALES",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfiast14.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfiast17.host.es": {
+                        "system_code": "PAQFI",
+                        "system_description": "SERVIDORES PAQUETIZACION FILIALES",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfiast17.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfiast18.host.es": {
+                        "system_code": "PAQFI",
+                        "system_description": "SERVIDORES PAQUETIZACION FILIALES",
+                        "host_environment": "dsvp",
+                        "environment_description": "Dev / Test Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfiast18.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopwst02.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopwst02.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopwst13.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopwst13.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqowasr04.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqowasr06.hostpre.glcpre.es": {
+                        "system_code": "TBASE",
+                        "system_description": "TSBASE FACTORY QA",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqowast03.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqowast09.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqowast13.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqowast15.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqowast17.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqowast19.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqowast21.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqowast23.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "adofiasp14.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "prop",
+                        "environment_description": "Produccio Participades",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@adofiasp14.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "adofiasp16.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "prop",
+                        "environment_description": "Produccio Participades",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@adofiasp16.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "adofiasp22.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "prop",
+                        "environment_description": "Produccio Participades",
+                        "center": "c2",
+                        "security_zone": "dmz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@adofiasp22.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "adofiasp24.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "prop",
+                        "environment_description": "Produccio Participades",
+                        "center": "c1",
+                        "security_zone": "dmz",
+                        "business_group": "EDG",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@adofiasp24.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp11.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp11.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp21.host.es": {
+                        "system_code": "ARQOP",
+                        "system_description": "ARQUITECTURA OPERACIO",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp21.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp31.host.es": {
+                        "system_code": "ARQOP",
+                        "system_description": "ARQUITECTURA OPERACIO",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp31.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp33.host.es": {
+                        "system_code": "ARQOP",
+                        "system_description": "ARQUITECTURA OPERACIO",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp33.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp41.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c1",
+                        "security_zone": "dmz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp41.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp47.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp47.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp52.host.es": {
+                        "system_code": "ARQOP",
+                        "system_description": "ARQUITECTURA OPERACIO",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp52.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp66.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp66.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp68.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c2",
+                        "security_zone": "dmz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp68.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp70.host.es": {
+                        "system_code": "ARQOP",
+                        "system_description": "ARQUITECTURA OPERACIO",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp70.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp72.host.es": {
+                        "system_code": "ARQOP",
+                        "system_description": "ARQUITECTURA OPERACIO",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp72.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasp86.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "pro",
+                        "environment_description": "Produccio Caixa",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasp86.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasr09.host.es": {
+                        "system_code": "PROFI",
+                        "system_description": "PROVISIONING SERVIDORES FISICOS",
+                        "host_environment": "pre",
+                        "environment_description": "Preproduccio",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasr09.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasr16.host.es": {
+                        "system_code": "ARQOP",
+                        "system_description": "ARQUITECTURA OPERACIO",
+                        "host_environment": "pre",
+                        "environment_description": "Preproduccio",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasr16.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasr19.host.es": {
+                        "system_code": "ARQOP",
+                        "system_description": "ARQUITECTURA OPERACIO",
+                        "host_environment": "pre",
+                        "environment_description": "Preproduccio",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasr19.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasr21.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasr21.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasr29.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasr29.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopasr31.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopasr31.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopast06.host.glc.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqopast13.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopast13.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopast15.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqopast17.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopast17.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopast19.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopast19.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopast21.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqopast23.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqopast31.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopast31.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopast39.host.es": {
+                        "system_code": "TBASE",
+                        "system_description": "TSBASE FACTORY QA",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopast39.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "arqopast41.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqopast43.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqopast55.hostpre.glcpre.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "arqopfst01.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@arqopfst01.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast50.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast50.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast51.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast51.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast52.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast52.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast53.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast54.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast55.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast56.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast57.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast58.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast59.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast59.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast60.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast60.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast61.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast61.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast62.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast62.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast63.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast63.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast64.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast64.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast65.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast65.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast66.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast66.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast67.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast67.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast68.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast68.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast69.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast69.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast70.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast71.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast72.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast73.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c1",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "winrm"
+                    },
+                    "paqfaast74.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast74.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast75.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast75.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast76.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast76.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast77.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast77.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast78.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "'{{ application_name }}@paqfaast78.host.es'",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast79.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "{{ application_name }}@paqfaast79.host.es",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    },
+                    "paqfaast79testtest.host.es": {
+                        "system_code": "PAQFA",
+                        "system_description": "SERVIDORES PAQUETIZACION FACTORY",
+                        "host_environment": "dsv",
+                        "environment_description": "Desenvolupament / Test",
+                        "center": "c2",
+                        "security_zone": "mz",
+                        "business_group": "CXB",
+                        "ansible_connection": "ssh",
+                        "ansible_user": "{{ application_name }}@paqfaast79testtest.host.es",
+                        "ansible_host": "sgsinasp-b1.svb.host.es"
+                    }
+                }
+            }
+        }
+    }
+}
