@@ -212,20 +212,21 @@ class HaiinvInventory(object):
 
         content = self._invoke_mock('GET', path, None)
 
-        pre_name = ''
+        # pre_name = ''
 
 
-        data = {'_meta':{'hostvars':{}}}
-        if content is not None:
-            data['all'] = {}
-            for record in content['all']['groups']:
-                if self.team is None:
-                    pre_name = (record).replace("-","_")
-                self.add_group(data, content['all']['groups'][record], pre_name, 'all')
-            data['_meta']['hostvars'] = content['all']['_meta']['hostvars']
-            data['all']['vars'] = content['all']['vars']
+        # data = {'_meta':{'hostvars':{}}}
+        # if content is not None:
+        #     data['all'] = {}
+        #     for record in content['all']['groups']:
+        #         if self.team is None:
+        #             pre_name = (record).replace("-","_")
+        #         self.add_group(data, content['all']['groups'][record], pre_name, 'all')
+        #     data['_meta']['hostvars'] = content['all']['_meta']['hostvars']
+        #     data['all']['vars'] = content['all']['vars']
 
-        return data
+        # return data
+        return content
 
     def json(self):
         return json.dumps(self.inventory)
