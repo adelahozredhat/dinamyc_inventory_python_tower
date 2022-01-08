@@ -1,32 +1,4 @@
 {
-   "_meta":{
-      "hostvars":{
-         "eiproast18.host.es":{
-            "system_code":"EIPRO",
-            "system_description":"PROVES PILOT",
-            "host_environment":"dsvp",
-            "environment_description":"Dev / Test Participades",
-            "center":"c1",
-            "security_zone":"mz",
-            "business_group":"CXB",
-            "ansible_connection":"ssh",
-            "ansible_user":"AAAA",
-            "ansible_host":"eiproast18.host.es"
-         },
-         "eiproast19.host.es":{
-            "system_code":"EIPRO",
-            "system_description":"PROVES PILOT",
-            "host_environment":"dsvp",
-            "environment_description":"Dev / Test Participades",
-            "center":"c1",
-            "security_zone":"mz",
-            "business_group":"CXB",
-            "ansible_connection":"ssh",
-            "ansible_user":"BBBB",
-            "ansible_host":"eiproast19.host.es"
-         }
-      }
-   },
    "group001":{
       "hosts":[
          "eiproast18.host.es"
