@@ -148,8 +148,7 @@ class HaiinvInventory(object):
         return data
 
     def _invoke_mock(self, verb, path, data):
-        data = json.load(open('mockup_app_inv_v2.json'))
-        return data['data']
+        return json.load(open('mockup_app_inv_v2.json'))
 
     def add_group(self,data, group, pre_name, fathername):
         haiinv_environments_pro_inv = ['tst', 'pre', 'pro', 'cnt']
