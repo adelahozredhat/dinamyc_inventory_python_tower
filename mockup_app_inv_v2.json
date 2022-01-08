@@ -10,7 +10,7 @@
             "security_zone":"mz",
             "business_group":"CXB",
             "ansible_connection":"ssh",
-            "ansible_user":"'{{ application_name }}AAAA'",
+            "ansible_user":"AAAA",
             "ansible_host":"eiproast18.host.es"
          },
          "eiproast19.host.es":{
@@ -22,7 +22,7 @@
             "security_zone":"mz",
             "business_group":"CXB",
             "ansible_connection":"ssh",
-            "ansible_user":"'{{ application_name }}BBBB'",
+            "ansible_user":"BBBB",
             "ansible_host":"eiproast19.host.es"
          }
       }
@@ -53,7 +53,6 @@
          "ansible_winrm_server_cert_validation":"ignore",
          "ansible_winrm_read_timeout_sec":120,
          "ansible_winrm_transport":"certificate",
-         "application_name":"test",
          "ansible_ssh_private_key_file":"/var/lib/awx/connection_keys/ssh/host/id_rsa"
       }
    }
