@@ -1,110 +1,35 @@
 {
-    "_meta": {
-        "hostvars": {
-            "192.168.0.100": {
-                "admin_password": "pgadmin",
-                "ansible_connection": "ssh",
-                "ansible_host": "192.168.0.100",
-                "ansible_host_key_checking": "false",
-                "ansible_user": "root",
-                "automationhub_admin_password": "automationhub",
-                "automationhub_package_name": "automation-hub",
-                "automationhub_package_version": "4.2.6",
-                "automationhub_pg_database": "automationhub",
-                "automationhub_pg_host": "192.168.0.101",
-                "automationhub_pg_password": "automationhub",
-                "automationhub_pg_port": "5432",
-                "automationhub_pg_sslmode": "prefer",
-                "automationhub_pg_username": "automationhub",
-                "automationhub_require_content_approval": true,
-                "host_key_checking": false,
-                "pg_database": "awx",
-                "pg_host": "192.168.0.101",
-                "pg_password": "awx",
-                "pg_port": "5432",
-                "pg_sslmode": "prefer",
-                "pg_username": "awx",
-                "tower_package_name": "ansible-tower",
-                "tower_package_release": "1",
-                "tower_package_version": "3.8.4"
-            },
-            "192.168.0.101": {
-                "admin_password": "pgadmin",
-                "ansible_connection": "ssh",
-                "ansible_host": "192.168.0.101",
-                "ansible_host_key_checking": "false",
-                "ansible_user": "root",
-                "automationhub_admin_password": "automationhub",
-                "automationhub_package_name": "automation-hub",
-                "automationhub_package_version": "4.2.6",
-                "automationhub_pg_database": "automationhub",
-                "automationhub_pg_host": "192.168.0.101",
-                "automationhub_pg_password": "automationhub",
-                "automationhub_pg_port": "5432",
-                "automationhub_pg_sslmode": "prefer",
-                "automationhub_pg_username": "automationhub",
-                "automationhub_require_content_approval": true,
-                "host_key_checking": false,
-                "pg_database": "awx",
-                "pg_host": "192.168.0.101",
-                "pg_password": "awx",
-                "pg_port": "5432",
-                "pg_sslmode": "prefer",
-                "pg_username": "awx",
-                "tower_package_name": "ansible-tower",
-                "tower_package_release": "1",
-                "tower_package_version": "3.8.4"
-            },
-            "192.168.0.102": {
-                "admin_password": "pgadmin",
-                "ansible_connection": "ssh",
-                "ansible_host": "192.168.0.102",
-                "ansible_host_key_checking": "false",
-                "ansible_user": "root",
-                "automationhub_admin_password": "automationhub",
-                "automationhub_package_name": "automation-hub",
-                "automationhub_package_version": "4.2.6",
-                "automationhub_pg_database": "automationhub",
-                "automationhub_pg_host": "192.168.0.101",
-                "automationhub_pg_password": "automationhub",
-                "automationhub_pg_port": "5432",
-                "automationhub_pg_sslmode": "prefer",
-                "automationhub_pg_username": "automationhub",
-                "automationhub_require_content_approval": true,
-                "host_key_checking": false,
-                "pg_database": "awx",
-                "pg_host": "192.168.0.101",
-                "pg_password": "awx",
-                "pg_port": "5432",
-                "pg_sslmode": "prefer",
-                "pg_username": "awx",
-                "tower_package_name": "ansible-tower",
-                "tower_package_release": "1",
-                "tower_package_version": "3.8.4"
+   "_meta":{
+      "vars":{
+         
+      }
+   },
+   "all":{
+      "children":{
+         "ANS":{
+            "children":{
+               "ANS_PRODUCTION":{
+                  "hosts":[
+                     "hostp01.lacaixa.es",
+                     "ghostp02.lacaixa.es"
+                  ]
+               },
+               "ANS_PREVIOUS":{
+                  "hosts":[
+                     "hostr01.lacaixa.es",
+                     "hostr06.lacaixa.es",
+                     "hostr08.lacaixa.es"
+                  ],
+                  "children":{
+                     "ANS_PREVIOUS_my_custom_inv":{
+                        "hosts":[
+                           "ghostp02.lacaixa.es"
+                        ]
+                     }
+                  }
+               }
             }
-        }
-    },
-    "all": {
-        "children": [
-            "automationhub",
-            "database",
-            "tower",
-            "ungrouped"
-        ]
-    },
-    "automationhub": {
-        "hosts": [
-            "192.168.0.102"
-        ]
-    },
-    "database": {
-        "hosts": [
-            "192.168.0.101"
-        ]
-    },
-    "tower": {
-        "hosts": [
-            "192.168.0.100"
-        ]
-    }
+         }
+      }
+   }
 }
