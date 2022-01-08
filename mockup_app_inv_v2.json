@@ -51,7 +51,7 @@
    },
    "all":{
       "children":[
-         "group001","group002"
+         "group001","group002","eiproast18.host.es","eiproast19.host.es"
       ],
       "vars":{
          "ansible_winrm_cert_pem":"/var/lib/awx/connection_keys/winrm/host/host_cert.pem",
