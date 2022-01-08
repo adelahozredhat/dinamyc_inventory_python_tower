@@ -50,6 +50,9 @@
       ]
    },
    "all":{
+      "children":[
+         "group001","group002"
+      ],
       "vars":{
          "ansible_winrm_cert_pem":"/var/lib/awx/connection_keys/winrm/host/host_cert.pem",
          "ansible_winrm_cert_key_pem":"/var/lib/awx/connection_keys/winrm/host/host_key.pem",
