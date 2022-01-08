@@ -46,11 +46,19 @@
     "group001": {
         "hosts": [
             "eiproast18.host.es"
-        ]
+        ],
+        "vars": {
+            "var1": true
+        },
+        "children": ["group002"]
     },
     "group002": {
         "hosts": [
             "eiproast19.host.es"
-        ]
+        ],
+        "vars": {
+            "var2": 500
+        },
+        "children":[]
     }
 }
